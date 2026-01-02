@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio Meni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>✨ Portofolio Meni ✨</h1>
+    <p>Mahasiswa Sistem Informasi | Web Enthusiast</p>
+</header>
+
+<nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('profile')">Profile</button>
+    <button onclick="showPage('project')">Karya</button>
+    <button onclick="showPage('media')">Media</button>
+    <button onclick="showPage('contact')">Contact</button>
+
+</nav>
+
+<section id="home" class="active">
+    <div class="card">
+        <h2>👋 Selamat Datang</h2>
+        <p>
+            Website ini adalah portofolio pribadi saya yang berisi
+            informasi profil, karya, dan media pendukung selama perkuliahan.
+        </p>
+    </div>
+</section>
+
+<section id="profile">
+    <div class="card">
+        <h2>🙋 Profil Saya</h2>
+        <ul>
+            <li><b>Nama:</b> Meni Desianti</li>
+            <li><b>NIM:</b> 251011700362</li>
+            <li><b>Program Studi:</b> Sistem Informasi</li>
+            <li><b>Fakultas:</b> Ilmu Komputer</li>
+            <li><b>Kampus:</b> Universitas Pamulang</li>
+        </ul>
+        <p>
+            Saya memiliki minat pada pengembangan website, UI/UX,
+            dan pemrograman berbasis web.
+        </p>
+    </div>
+</section>
+
+<section id="project">
+    <div class="card">
+        <h2>💻 Karya & Project</h2>
+
+        <div class="projects">
+            <div class="project-card">
+                <img src="mockupp hijab.png">
+                <h4>E-Commerce Hijab</h4>
+            </div>
+
+            <div class="project-card">
+                <img src="mockup profil.png">
+                <h4>Website Profil</h4>
+            </div>
+
+            <div class="project-card">
+                <img src="mockup total belanja.png">
+                <h4>Website Hitung Total Belanja</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="media">
+    <div class="card">
+        <h2>🎬 Media</h2>
+        <p>Berikut adalah koleksi media berupa video, audio, dan foto.</p>
+
+        <h3>📸 Galeri Foto</h3>
+        <div class="gallery">
+            <img src="foto1.jpeg" alt="Media 1">
+            <img src="foto2.jpeg" alt="Media 2">
+            <img src="foto3.jpeg" alt="Media 3">
+        </div>
+
+        <h3>🎥 Video</h3>
+        <video controls width="320">
+            <source src="vidio.mp4" type="video/mp4">
+        </video>
+
+        <h3>🎧 Audio</h3>
+        <audio controls>
+            <source src="Aku Milikmu - Dewa 19 (Lyrics Video).mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>📄 Dokumen</h3>
+        <a class="doc" href="Uas_PWEB1.PDF" target="_blank">Download Dokumen</a>
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="card">
+        <h2>📬 Contact Me</h2>
+        <p>Silakan hubungi saya melalui form di bawah ini:</p>
+
+        <form class="contact-form" onsubmit="sendMessage(event)">
+            <input type="text" id="name" placeholder="Nama" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Pesan" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <div class="contact-info">
+            <p>📧 Email : desiantimeni@email.com</p>
+            <p>📱 WhatsApp : 085799549594</p>
+            <p>📍 Indonesia</p>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2026 | Portofolio Meni</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
